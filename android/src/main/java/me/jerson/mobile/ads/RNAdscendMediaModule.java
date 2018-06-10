@@ -26,20 +26,20 @@ public class RNAdscendMediaModule extends ReactContextBaseJavaModule {
     return "RNAdscendMedia";
   }
 
-
   @ReactMethod
   public void showIntentForMarketResearch(String publisherId, String profileId, String subid1) {
-      Log.d(TAG, "showIntentForMarketResearch:" + publisherId + profileId + subid1);
+    Log.d(TAG, "showIntentForMarketResearch:" + publisherId + profileId + subid1);
 
-      if (reactContext.getCurrentActivity() != null) {
-          Intent intent = MarketResearchActivity.getIntentForMarketResearch(reactContext.getCurrentActivity(), publisherId, profileId, subid1);
-          intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-          reactContext.startActivity(intent);
-          Log.w(TAG, "getIntentForMarketResearch");
+    if (reactContext.getCurrentActivity() != null) {
+      Intent intent = MarketResearchActivity.getIntentForMarketResearch(reactContext.getCurrentActivity(), publisherId,
+          profileId, subid1);
+      intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+      reactContext.startActivity(intent);
+      Log.w(TAG, "getIntentForMarketResearch");
 
-      } else {
-          Log.w(TAG, "init");
-      }
+    } else {
+      Log.w(TAG, "init");
+    }
 
   }
 }
