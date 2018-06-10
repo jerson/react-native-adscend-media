@@ -4,9 +4,9 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "RNAdscendMedia"
   s.description  = <<-DESC
-                  RNAdscendMedia
+                  AdscendMedia support for **Android**
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/jerson/react-native-adscend-media"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "jeral17@gmail.com" }
