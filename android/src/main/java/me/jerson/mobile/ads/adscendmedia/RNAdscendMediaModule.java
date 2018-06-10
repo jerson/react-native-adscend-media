@@ -1,5 +1,5 @@
 
-package me.jerson.mobile.ads;
+package me.jerson.mobile.ads.adscendmedia;
 
 import android.content.Intent;
 import android.util.Log;
