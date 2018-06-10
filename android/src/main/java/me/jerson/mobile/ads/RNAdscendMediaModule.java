@@ -1,10 +1,15 @@
 
 package me.jerson.mobile.ads;
 
+import android.content.Intent;
+import android.util.Log;
+
+import com.adscendmedia.sdk.ui.MarketResearchActivity;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import com.facebook.react.module.annotations.ReactModule;
 
 public class RNAdscendMediaModule extends ReactContextBaseJavaModule {
 
